@@ -4,6 +4,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'af': ['"Abril Fatface"'],
+      'rubik': ['"Rubik"']
+    }
   },
   plugins: [],
 }
