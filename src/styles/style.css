@@ -1,9 +1,24 @@
 .title{
+    font-weight: bolder;
+    font-size: 72px;
+    background: -webkit-radial-gradient(circle, rgba(190,48,52,1) 0%, rgba(175,134,100,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation-name: moveRight;
     animation-duration: 0.7s;
 }
 
+.imgYo{
+    animation-name: moveRight;
+    animation-duration: 1s;
+}
+
 .titleTwo{
+    font-weight: bolder;
+    font-size: 72px;
+    background: -webkit-radial-gradient(circle, rgba(190,48,52,1) 0%, rgba(175,134,100,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation-name: moveLeft;
     animation-duration: 1s;
 }
@@ -46,3 +61,4 @@
     0% {opacity: 0; transform: translateY(50px);}
     100% {opacity: 1; transform: translate(0);}
 }
+
