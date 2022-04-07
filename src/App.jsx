@@ -1,5 +1,6 @@
-import Landing from "./components/Landing"
-import Navbar from "./components/Navbar"
+import Navbar from './components/Navbar'
+import Landing from './pages/Landing'
+import Portafolio from './pages/Portafolio'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navbar/>
       <Landing/>
+      <Portafolio/>
     </>
   )
 }
