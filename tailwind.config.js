@@ -6,7 +6,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       'af': ['"Abril Fatface"'],
-      'rubik': ['"Rubik"']
+      'rubik': ['"Rubik"'],
+      'fredoka': ['"Fredoka One"']
     }
   },
   plugins: [],
