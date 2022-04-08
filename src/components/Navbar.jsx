@@ -6,7 +6,7 @@ const Navbar = () => {
     const [page, setPage] = useState('home');
 
     return (
-        <nav className='opacity-0 bg-gray-50 z-50 sm:opacity-100 flex w-full h-20 fixed top-0 items-center shadow-2xl'>
+        <nav style={{background: 'radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)'}} className='z-50 opacity-0 sm:opacity-100 flex w-full h-20 fixed top-0 items-center'>
             <div className='w-1/4 flex justify-center'>
                 <img className='w-16' src={logo} alt="" />
             </div>
