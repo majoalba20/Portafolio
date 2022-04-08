@@ -1,4 +1,5 @@
 import Particles from "react-tsparticles"
+import '../styles/particles.css'
 
 const ParticleBackground = () => {
     return (
