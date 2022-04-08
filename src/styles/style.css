@@ -1,7 +1,5 @@
 .title{
-    font-weight: bolder;
-    font-size: 72px;
-    background: -webkit-radial-gradient(circle, rgba(190,48,52,1) 0%, rgba(175,134,100,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-name: moveRight;
@@ -14,9 +12,7 @@
 }
 
 .titleTwo{
-    font-weight: bolder;
-    font-size: 72px;
-    background: -webkit-radial-gradient(circle, rgba(190,48,52,1) 0%, rgba(175,134,100,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-name: moveLeft;
@@ -33,7 +29,7 @@
     content: "";
     position: absolute;
     z-index: -1;
-    background-color: #EA6F2D;
+    background-color: #b150a4;
     top: 0;
     right: 0;
     bottom: 0;
