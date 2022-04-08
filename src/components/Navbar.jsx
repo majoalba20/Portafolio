@@ -1,21 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { NavLink } from 'react-router-dom';
 import cometa from '../../img/cometa.png'
 
 const Navbar = () => {
 
-    const [page, setPage] = useState('home');
-
     return (
-        <nav className='z-50 opacity-0 sm:opacity-100 flex w-full h-20 fixed top-0 items-center'>
+        <nav className='opacity-0 sm:opacity-100 flex w-full h-20 fixed top-0 items-center'>
             <div className='w-1/4 flex justify-center'>
                 <img className='w-16' src={cometa} alt="" />
             </div>
             <div className='w-3/4'>
                 <ul className='flex font-fredoka text-xl justify-around cursor-pointer'>
-                    <li><a href="#" onClick={()=>setPage('home')} className={(page === 'home' ? 'text-[#b150a4]' : 'text-white')}>Home</a></li>
-                    <li><a href="#" onClick={()=>setPage('about')} className={(page === 'about' ? 'text-[#b150a4]' : 'text-white')}>About Me</a></li>
-                    <li><a href="#" onClick={()=>setPage('portafolio')} className={(page === 'portafolio' ? 'text-[#b150a4]' : 'text-white')}>Portafolio</a></li>
-                    <li><a href="#" onClick={()=>setPage('contact')} className={(page === 'contact' ? 'text-[#b150a4]' : 'text-white')}>Contact Me</a></li>
+                    <li><NavLink className={({isActive}) => (isActive ? 'text-[#b150a4]' : 'text-white hover:text-[#b150a4]')} to={'/'}>Home</NavLink></li>
+                    <li><NavLink to={'/about'}>About Me</NavLink></li>
+                    <li><NavLink to={'/portafolio'}>Portafolio</NavLink></li>
+                    <li><NavLink to={'/contact'}>Contact Me</NavLink></li>
                 </ul>
             </div>
         </nav>
