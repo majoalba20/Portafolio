@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { FaArrowRight } from "react-icons/fa";
 import '../styles/style.css'
 import ParticleBackground from '../components/ParticleBackground'
+import Navbar from '../components/Navbar';
 
 const Landing = () => {
 
@@ -14,6 +15,7 @@ const Landing = () => {
 
     return (
         <>
+            <Navbar/>
             <ParticleBackground/>
             <section className='p-32 pb-0 flex'>
                 <div className='lg:w-1/2 w-full justify-center pt-12'>
