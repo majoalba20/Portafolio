@@ -1,20 +1,33 @@
-.title{
-    background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation-name: moveRight;
-    animation-duration: 0.7s;
-}
-
-.imgYo{
-    animation-name: moveRight;
-    animation-duration: 1s;
-}
-
+.title,
 .titleTwo{
     background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.title,.text{
+    animation-name: moveRight;
+    animation-duration: 0.7s;
+}
+
+.cardAni{
+    animation-name: moveUp;
+    animation-duration: 1s;
+}
+
+.bg-card, .form-bg{
+    background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.tierra,
+.social{
+    animation-name: moveRight;
+    animation-duration: 1s;
+}
+
+.yo,
+.titleTwo,
+.form-bg{
     animation-name: moveLeft;
     animation-duration: 1s;
 }
@@ -41,6 +54,32 @@
 
 .btnP:hover:before{
     transform: scaleX(1);
+}
+
+.active,
+.noActive:hover{
+    color:#b150a4;
+}
+
+.noActive{
+    color: white;
+}
+
+.ovni{
+    transform: translatey(0px);
+	animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 @keyframes moveRight{
