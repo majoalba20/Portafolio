@@ -2,10 +2,10 @@
 
 En este proyecto presento la elaboracion de mi portafolio personal usando react y tailwind.
 
-<img src="src/img/readmeHome.png">
-<img src="src/img/readmeCatalog.png">
-<img src="src/img/readmeDetail.png">
-<img src="src/img/readmeForm.png">
+<img src="src/img/homePage.png">
+<img src="src/img/about.png">
+<img src="src/img/porta.png">
+<img src="src/img/contactMe.png">
 
 <h1>Librerias 📕</h1>
 
