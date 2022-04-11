@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import tierra from '../../img/tierra.png'
 import Typewriter from 'typewriter-effect';
 import { FaArrowRight } from "react-icons/fa";
+import NavbarFloatting from '../components/NavbarFloatting'
 import '../styles/style.css'
 import ParticleBackground from '../components/ParticleBackground'
 import Navbar from '../components/Navbar';
@@ -45,6 +46,7 @@ const Landing = () => {
                     <img className='tierra z-30 hidden lg:block lg:w-9/12' src={tierra} alt="" />
                 </div>
             </section>
+            <NavbarFloatting/>
         </>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from "../components/Cards"
 import Navbar from '../components/Navbar'
+import NavbarFloatting from '../components/NavbarFloatting'
 import ParticleBackground from '../components/ParticleBackground'
 
 const Portafolio = () => {
@@ -13,6 +14,7 @@ const Portafolio = () => {
                     <Cards/>
                 </div>
             </div>
+            <NavbarFloatting/>
         </>
     )
 }

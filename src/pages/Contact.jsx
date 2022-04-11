@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import ParticleBackground from '../components/ParticleBackground'
+import NavbarFloatting from '../components/NavbarFloatting'
 import Form from '../components/Form'
 import github from '../../img/github.svg'
 import linkedin from '../../img/linkedin.svg'
@@ -27,6 +28,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+            <NavbarFloatting/>
         </>
     )
 }

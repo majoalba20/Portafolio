@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import ParticleBackground from '../components/ParticleBackground'
+import NavbarFloatting from '../components/NavbarFloatting'
 import yo from '../../img/yoV3.png'
 
 const About = () => {
@@ -18,6 +19,7 @@ const About = () => {
                     Nihil, veritatis! Dolores corrupti voluptatibus ipsam molestiae nam aspernatur esse, sed qui. Maiores aspernatur obcaecati adipisci pariatur eligendi, eos deserunt aliquam, officiis, qui accusantium odit amet similique magni atque iure!
                 </div>
             </section>
+            <NavbarFloatting/>
         </>
     )
 }
