@@ -8,6 +8,7 @@ import rick from '../../img/rick&morty.png'
 import home from '../../img/home.png'
 import musica from '../../img/musica.png'
 import replica from '../../img/replica.png'
+import '../styles/style.css'
 
 const projects = [
     {
@@ -58,13 +59,13 @@ const Cards = () => {
             {
                 projects.map(p => {
                     return(
-                        <div key={p.image} className='w-60 h-fit z-40 rounded-b-lg hover:scale-110 shadow-2xl'>
-                            <div style={{height: '108.3px'}} className='w-60'>
+                        <div key={p.image} className='cardAni w-60 h-fit z-40 hover:scale-110'>
+                            <div style={{height: '108.3px'}} className='w-60 bg-white rounded-t-lg'>
                                 <img className='rounded-t-lg' src={p.image} alt="" />
                             </div>
-                            <div className='w-60 flex'>
-                                <a href={p.demo} target={'_blank'} className='rounded-bl-lg w-1/2 h-12 bg-[#FF66C4] flex justify-center items-center font-rubik text-white font-bold'>DEMO</a>
-                                <a href={p.repo} target={'_blank'} className='rounded-br-lg w-1/2 h-12 bg-[#FF66C4] flex justify-center items-center'><FaGithub fontSize='1.5em'/></a>
+                            <div className='bg-card w-60 flex rounded-b-lg'>
+                                <a href={p.demo} target={'_blank'} className='rounded-bl-lg w-1/2 h-12 flex justify-center items-center font-rubik text-white font-bold'>DEMO</a>
+                                <a href={p.repo} target={'_blank'} className='rounded-br-lg w-1/2 h-12 flex justify-center items-center'><FaGithub fontSize='1.5em'/></a>
                             </div>
                         </div>
                     )
