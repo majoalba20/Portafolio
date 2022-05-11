@@ -6,6 +6,7 @@ import NavbarFloatting from '../components/NavbarFloatting'
 import '../styles/style.css'
 import ParticleBackground from '../components/ParticleBackground'
 import Navbar from '../components/Navbar';
+import { NavLink } from 'react-router-dom';
 
 const Landing = () => {
 
@@ -18,7 +19,7 @@ const Landing = () => {
         <>
             <Navbar/>
             <ParticleBackground/>
-            <section className='md:p-32 md:pb-0 p-16 flex'>
+            <section className='sm:p-32 md:pb-0 p-10 flex'>
                 <div className='lg:w-1/2 w-full justify-center pt-12'>
                     <h2 className='text-7xl font-fredoka'>
                         <div className='title'>{state.title}</div>
@@ -36,17 +37,19 @@ const Landing = () => {
                             }}
                         />
                     </div>
-                    <div className='lg:pt-3'>
-                        <button className='btnP z-30 relative shadow-2xl w-52 flex justify-around p-5 font-rubik text-white font-bold rounded-full bg-[#7557d2]'>
+                    <div className='pt-10 sm:pt-1 flex gap-3'>
+                        <NavLink to={'/portafolio'}><button className='btnP z-30 relative shadow-2xl w-52 flex justify-around p-5 font-rubik text-white font-bold rounded-full bg-[#7557d2]'>
                         VIEW PROJECTS<FaArrowRight color='white' fontSize='1.5em'/>
-                        </button>
+                        </button></NavLink>  
                     </div>
                 </div>
                 <div className='lg:w-1/2 w-0 flex justify-center'>
                     <img className='tierra z-30 hidden lg:block lg:w-9/12' src={tierra} alt="" />
                 </div>
             </section>
-            <NavbarFloatting/>
+            <div className='pt-16'>
+                <NavbarFloatting/>
+            </div>
         </>
     )
 }

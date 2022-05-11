@@ -10,11 +10,13 @@ const Portafolio = () => {
             <Navbar/>
             <ParticleBackground/>
             <div className='flex w-full justify-center'>
-                <div className='flex flex-wrap gap-8 justify-center items-center pt-36 w-11/12'>
+                <div className='flex flex-wrap gap-8 justify-center items-center pt-10 pb-6 sm:pt-36 w-11/12'>
                     <Cards/>
                 </div>
             </div>
-            <NavbarFloatting/>
+            <div className='pt-16'>
+                <NavbarFloatting/>
+            </div>
         </>
     )
 }
